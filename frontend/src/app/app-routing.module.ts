@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'my-elements',
     loadChildren: () => import('./my-elements/my-elements.module').then( m => m.MyElementsPageModule)
   },
+  {
+    path: 'add-element',
+    loadChildren: () => import('./add-element/add-element.module').then( m => m.AddElementPageModule)
+  },
 ];
 
 @NgModule({
