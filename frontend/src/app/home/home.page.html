@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Main Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Main Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../assets/user.png" alt="user">
+      </ion-avatar>
+      <ion-label>
+        <h3>Usuario</h3>
+        <p>Nov 21, 2025</p>
+      </ion-label>
+      <ion-icon slot="end" name="thumbs-up">
+      </ion-icon>
+    </ion-item>
+
+    <img src="assets/hall.jpg" alt="hall" class="hall-image">
+  
+    <ion-card-header>
+    <ion-card-title>Welcome to NeuroRehabHub!</ion-card-title>
+    <ion-card-subtitle>The aim of this application is to act as a container 
+      of commonly use neurorehabilitation advises and techniques.</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Use the buttons below to use this application.
+  </ion-card-content>
+  <ion-footer>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-icon name="logo-github"></ion-icon>
+          <span>FSHIS2</span>
+        </ion-col>
+        <ion-col size="6" class="ion-text-end">
+          <div>Built with</div>
+          <ion-icon name="logo-ionic"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+</ion-card>
+
+  <ion-button expand="block" (click)="goToMyElements()">Show Elements
+    <ion-icon slot="end" name="reorder-four"></ion-icon>
+  </ion-button>
+  <ion-button expand="block" (click)="addElements()">Add Elements
+    <ion-icon name="duplicate"></ion-icon>
+  </ion-button>
+</ion-content>
